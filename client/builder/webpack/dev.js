@@ -5,7 +5,7 @@ import path from 'path';
 import { merge } from 'webpack-merge';
 import { fileURLToPath } from 'url';
 import common from './common.js';
-import env from '../env/dev.js';
+import env from '../env/dev.ts';
 
 const DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url), '../../..'));
 

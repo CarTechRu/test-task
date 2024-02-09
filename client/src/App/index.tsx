@@ -1,21 +1,18 @@
 import {
-  Box, Container, Divider, Typography,
-} from '@mui/material';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+  BrowserRouter as Router, Route, Routes,
+} from 'react-router-dom';
+
+import AuctionsPage from '../pages/AuctionsPage';
+import Auction from '../pages/AuctionPage';
 
 function App() {
   return (
-    <Container>
-      <Box sx={{ mt: 3, mb: 2 }}>
-        <Typography variant="h1" fontSize="h3.fontSize">
-          Аукционы
-        </Typography>
-      </Box>
-
-      <Box mb={3}>
-        <Divider />
-      </Box>
-    </Container>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AuctionsPage />} />
+        <Route path="/auction/:id" element={<Auction />} />
+      </Routes>
+    </Router>
   );
 }
 

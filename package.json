@@ -37,7 +37,7 @@
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.8",
     "@mui/icons-material": "^5.15.8",
-    "@mui/material": "^5.15.7",
+    "@mui/material": "^5.15.8",
     "@mui/styles": "^5.15.8",
     "@reduxjs/toolkit": "^2.1.0",
     "axios": "^1.6.7",
